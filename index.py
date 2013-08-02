@@ -66,7 +66,7 @@ def print_ende_leer():
 
 $(document).ready(function(){
     $('.accordion h2').click(function(){
-  if( $(this).next().is(':hidden') )
+	if( $(this).next().is(':hidden') )
 		{
 		$('.accordion h2').removeClass('active').next().slideUp();
 		$(this).addClass('active').next().slideDown();
@@ -219,7 +219,7 @@ def main(parameter):
             anmelden()
 
             #klan_li = [13, 14, 41, 176, 236, 464, 825, 928, 1138, 1254, 1332, 1512, 2140, 3333, 3995, 5349, 5063, 5757, 6749]
-            klan_li = [13, 41, 176, 236, 464, 825, 1138, 1254, 1332, 1512, 1535, 2140, 3333, 3995, 5063, 5349, 5757, 6749]
+            klan_li = [13, 14, 41, 176, 236, 464, 825, 1138, 1254, 1332, 1512, 1535, 2140, 3333, 3995, 5063, 5349, 5757, 6749]
             klan_num = int(form["Klan_id"].value)
 
             fil = open('log.txt','a')
